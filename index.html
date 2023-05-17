@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for filling the form.</p>
+    <form name="survey-form" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text"  placeholder="enter your name" required> </br>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="emter your email" required> <br>
+        <label id="number-label" for="number">Age (optional)</label>
+        <input id="number" name="number" type="number" min="0" max="100000000" placeholder="age"> <br>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          
+          
+          <label for="yes"> <input type="radio" class="inline" name="recommend" value="yes" id="yes">Yes</label>
+          <label for="no"><input type="radio" class="inline" name="recommend" value="no">No</label>
+          <label for="maybe"><input type="radio" class="inline" name="recommend" value="maybe">Maybe</label>
+      </fieldset>
+      <fieldset>
+        <label>Improved Skill</label>
+          <label for="html"><input type="checkbox" id="html" name="skill" value="html" class="inline">html</label>
+          <label for="css"><input type="checkbox" id="css" name="skill" value="css" class="inline">css</label>
+          <label for="javascript"><input type="checkbox" id="javascript" name="javascript" value="javascript" class="inline">javascript</label>
+          <label for="react native"><input type="checkbox" id="react native" name="skill" value="react native" class="inline">react native</label>
+          <label for="d3.js"><input type="checkbox" id="d3.js" name="skill" value="d3.js" class="inline">d3.js</label>
+      </fieldset>
+      <div>
+        <label for comment>Comment</label>
+        <textarea id="comment" name="comment" value="comment" rols="4" cols="50" placeholder="Enter your comment here"></textarea>
+      </div>
+      <input type="submit" id="submit" name="survey-form" value="Submit">
+    </form>
+  </body>
+</html>
